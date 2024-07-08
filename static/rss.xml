@@ -1,0 +1,342 @@
+<rss version='2.0' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+<channel>
+<title>Hazelware</title>
+<link>/</link>
+<description>Hazelware: the web home of Jonathan Hays</description>
+<language>en-us</language>
+<copyright>Copyright (c) 2004 Jonathan Hays. All rights reserved.</copyright>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<webMaster>bosshogg@luggle.com</webMaster>
+<generator>Hazelware RSS Feed Generator</generator>
+<item>
+<title>Advertisement</title>
+<description>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1164091726055367";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_ui_features = "rc:6";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</description>
+<dc:creator>"Google!!!"</dc:creator>
+<dc:date>2007-06-11T15:01:04-08:00</dc:date>
+</item>
+<item>
+<title>OLE Database Provider</title>
+<link>/archive-132.html</link>
+<guid>/archive-132.html</guid>
+<description><![CDATA[If you&#39;re in the market for a robust OLE DB provider for your development, I highly suggest you check out my friend Sean&#39;s company <A HREF="http://cherrycitysoftware.com">Cherry City Software</A>.  He has a slew of commercially released and production tested modules for Windows 200x/XP/Vista/7.  Check him out!]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2010-01-13T03:52:57-08:00</dc:date>
+</item>
+<item>
+<title>Blog Moving</title>
+<link>/archive-131.html</link>
+<guid>/archive-131.html</guid>
+<description><![CDATA[I&#39;m never sure how many people actually read my blog (there can&#39;t be that many at this point) but in case you do still read it, I&#39;ve moved all new content posts to my blog section on the 3Jacks website.  New url: <A HREF="http://www.threejacks.com/?q=blog/1">http://www.threejacks.com/?q=blog/1</A>
+<BR>I&#39;m going to leave this site up for legacy web searches, etc, but won&#39;t be posting much new here.  I&#39;m leaving http://hazelware.luggle.com, but have also redirected http://www.hazelware.com to the blog.  Hopefully this won&#39;t cause any problems for anyone.
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-11-28T17:48:40-08:00</dc:date>
+</item>
+<item>
+<title>Short Essay on the State of Apple&#39;s Developer Relations</title>
+<link>/archive-130.html</link>
+<guid>/archive-130.html</guid>
+<description><![CDATA[I wrote <A HREF="http://www.threejacks.com/?q=node/39">this short essay</A> for Three Jacks on the similarities between the state of the iPhone developer support and the historical Palm developer support.  For you to enjoy...]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-11-21T22:23:15-08:00</dc:date>
+</item>
+<item>
+<title>NSString and string formatting</title>
+<link>/archive-129.html</link>
+<guid>/archive-129.html</guid>
+<description><![CDATA[So, perhaps everyone else in the universe just learned this automatically, but for some reason, it took quite a bit of hunting to find it.  Anyway, if you pass around a bunch of NSString&#39;s and want to use them in NSString&#39;s stringWithFormat, the character sequence to use is %@.  In other words, you can do the following:
+<B><BR>
+<BR>NSString* string1 = @"Jon";
+<BR>NSString* formattedString = [NSString stringWithFormat:@"Hello %@"];
+<BR></B>
+<BR>Which of course will insert "Jon" into the other NSString.  All the other C formatting escape sequences will also work such as %d, etc, etc.
+<BR>Anyway, hopefully this helps someone.  If nothing else, I can just return to my own blog the next time I forget!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-11-15T21:17:15-08:00</dc:date>
+</item>
+<item>
+<title>Objective C, @property and retain</title>
+<link>/archive-128.html</link>
+<guid>/archive-128.html</guid>
+<description><![CDATA[I learned an interesting thing the other day about how Objective C deals with the memory management of member variables that are declared as a property.  In a nutshell, if a variable is a property, it&#39;s life time is auto managed by Obj C.  A great example is if you have an NSString* variable.  If you set it without making it a property, you explicitly have to do a [string retain] or it will go stale.  However, if you declare it as a property, it will not go stale and will stay auto-referenced for the lifetime of the object that owns it.  In retrospect, this seems obvious because Objective C knows when the parent object is going away and can iterate through all property objects and release them at that point as well.  However, if you don&#39;t know this and you copy example code (as I did) then you can get bit by it fairly easily.  Anyway, consider yourself warned...]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-11-10T23:51:46-08:00</dc:date>
+</item>
+<item>
+<title>My Dev Setup Lately</title>
+<link>/archive-127.html</link>
+<guid>/archive-127.html</guid>
+<description><![CDATA[FWIW, I have really been enjoying my Macbook.  For those that care, I upgraded to 4 GB of RAM (do it yourself from Crucial and save >$100!!!)  For my Blackberry and WinMo development, I have installed VirtualBox from Sun (Free!) and am running Windows 7 in the VM.  For mobile dev, it is more than adequate and the combo of 4GB + Win7 makes it feel pretty smooth.  No, it&#39;s not quite as good as my desktop, but this is an all in one solution.  Sweet!]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-10-27T22:59:46-08:00</dc:date>
+</item>
+<item>
+<title>Three Ways To Randomize on the iPhone</title>
+<link>/archive-126.html</link>
+<guid>/archive-126.html</guid>
+<description><![CDATA[To the best of my knowledge, there are three ways to generate random numbers on the iPhone:
+
+The first, <i>SecRandomCopyBytes</i>:
+<BR>
+<b>
+<br>UInt32 randomResult = 0;
+<br>int result = SecRandomCopyBytes(kSecRandomDefault, <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp sizeof(int), (uint8_t*)&randomResult);
+<br>if (result != 0)
+<br>&nbsp &nbsp &nbsp randomResult = arc4random();
+</b>
+<br>
+<br>The second, <i>arc4random</i>:
+<br>
+<b><br>UInt32 randomResult = arc4random();
+</b><br>
+<br>
+<br>The last (and worst) <i>rand()</i>:
+<br>
+<b><br>UInt32 randomResult = rand();
+</b><br>
+<br>Good luck with all your random things!
+<br>
+<br>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-10-05T03:51:47-08:00</dc:date>
+</item>
+<item>
+<title>How to Remove .svn Directories On a Mac</title>
+<link>/archive-125.html</link>
+<guid>/archive-125.html</guid>
+<description><![CDATA[If you use svn on your Mac and you&#39;ve ever wanted to move/copy one directory to another project in SVN, you&#39;ve probably found that the folders keep their association with whatever SVN destination you first added them to.  At issue is the problem that there are hidden .svn directories that you need to clean up.  The easiest way that I&#39;ve found around this issue is to drop into the shell, navigate to the directoy that you want to remove from source control, and issue this command:
+<BR>
+<BR>find . -type d -name .svn -depth -exec rm -rf {} ;
+<BR>
+<BR>Enjoy.]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-09-16T21:36:04-08:00</dc:date>
+</item>
+<item>
+<title>How To Detect The iPhone Simulator</title>
+<link>/archive-124.html</link>
+<guid>/archive-124.html</guid>
+<description><![CDATA[Recently, I had to try to detect if I was running on the iPhone Simulator.  Here is the code I came up with.  Please for you to enjoy...
+<br>	
+<pre>
+        NSString* model= [[UIDevice currentDevice] model];
+	NSString* simulator = @"iPhone Simulator";
+	if ([model compare:simulator] == NSOrderedSame)
+        {
+             //Simulator!
+        }
+</pre>
+
+<br>-Jon
+]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-08-29T04:45:01-08:00</dc:date>
+</item>
+<item>
+<title>iPhoneMom Likes Doodle Games!</title>
+<link>/archive-123.html</link>
+<guid>/archive-123.html</guid>
+<description><![CDATA[Check out her review here:
+<A HREF="http://www.theiphonemom.com/doodle-games">http://www.theiphonemom.com/doodle-games</A>
+<BR>
+<BR>Awesome!
+]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-08-17T18:23:51-08:00</dc:date>
+</item>
+<item>
+<title>Updates To the Doodle Games Line</title>
+<link>/archive-122.html</link>
+<guid>/archive-122.html</guid>
+<description><![CDATA[Lots of action on Doodle Games the past week.  First, the Doodle Singles were released:
+<BR>-Doodle Guess
+<BR>-Doodle Ships
+<BR>-Tic Tac Doodle
+<BR>-Doodle Search
+<BR>-Doodle Dots
+<BR>These are the individual Doodle Games released as stand alone games for only $0.99.  
+<BR>We also released a new version of Doodle Games (1.1) today.  Included is a bunch of new content and a couple of bug fixes.  We also addressed the two most requested features which are a global sound control and the ability to enter your own word in Hangman (Doodle Guess).  We have 2 more new applications that we are currently hard at work on, but I&#39;ll try to post a few of the nuggets I&#39;ve picked up on iPhone development in the next week or so.
+<BR>
+<BR>Enjoy!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-08-08T06:01:53-08:00</dc:date>
+</item>
+<item>
+<title>Three Jacks Now Tweets</title>
+<link>/archive-120.html</link>
+<guid>/archive-120.html</guid>
+<description><![CDATA[<TABLE><TR><TD><IMG SRC="http://www.threejacks.com/images/01_HomeScreen.PNG"></TD>
+<TD align=left valign=center>
+<A HREF="http://www.threejacks.com">Three Jacks</A> tweets! We&#39;ll be giving away free apps to folks whenever we launch new apps. Farkle/10,000 coming as soon as Apple finishes approving. Any day now! 
+<BR><A HREF="http://twitter.com/threejacks">http://twitter.com/threejacks</A>
+<BR>
+<BR>-Jon
+</TD></TR></TABLE>]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-07-25T21:08:22-08:00</dc:date>
+</item>
+<item>
+<title>Second iPhone App Submitted For Approval!</title>
+<link>/archive-119.html</link>
+<guid>/archive-119.html</guid>
+<description><![CDATA[Ok, so <A HREF="http://www.threejacks.com">our</A> second iPhone application has now been submitted to Apple for approval.  All of the folks who volunteered to be beta testers, I&#39;ll email you a key once we get approval back and you can download it from the app store.  We&#39;re still working on the web pages since Apple typically takes about 2 weeks to do approvals, but if you&#39;re interested you can see the sneak peak <A HREF="http://www.threejacks.com/10K/index.html">here.</A>
+<BR>If you&#39;ve never played <A HREF="http://en.wikipedia.org/wiki/Farkle">Ten Thousand (aka Farkle)</A> then you&#39;re missing out on an incredibly addicting game.  Stay tuned.  Hopefully Apple won&#39;t keep us waiting too long!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-07-13T01:04:00-08:00</dc:date>
+</item>
+<item>
+<title>Pinch Media Analytics for iPhone</title>
+<link>/archive-118.html</link>
+<guid>/archive-118.html</guid>
+<description><![CDATA[Recently, I was advised by a friend of mine to take a look at <A HREF="http://www.pinchmedia.com">Pinch Media&#39;s</A> analytics plug-in for <A HREF="http://www.threejacks.com">our upcoming iPhone applications</A>.  Pinch has created a library that literally takes only 2 additional lines of code to enable you to get feedback remotely on your applications.  They also have a web dashboard that is incredibly powerful, yet simple to use.  And it&#39;s free!
+<BR>If you&#39;re working on an iPhone application, I highly recommend you at least take a look at what they have to offer.
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-07-12T03:05:11-08:00</dc:date>
+</item>
+<item>
+<title>New iPhone Game Coming Soon!</title>
+<link>/archive-117.html</link>
+<guid>/archive-117.html</guid>
+<description><![CDATA[I&#39;m getting ready to launch my second iPhone game in the next week or two.  <A HREF="http://threejacks.com/doodlegames/index.html">Doodle Games</A> is selling as well as I expected, and now we&#39;re looking for some beta testers to try out the new game.  It&#39;s more grown up than Doodle Games, although I have to admit that my daughter does enjoy playing it.  
+<BR><A HREF="mailto:jon@luggle.com">Drop me a note</A> if you&#39;d like to help us beta test it, and thanks to all the folks that helped test Doodle Games!
+<BR>
+<BR>Cheers!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-07-08T21:53:15-08:00</dc:date>
+</item>
+<item>
+<title>Whoa.  I&#39;m Quoted in a Magazine!</title>
+<link>/archive-116.html</link>
+<guid>/archive-116.html</guid>
+<description><![CDATA[I did an interview for a wireless M2M product for the Real Estate vertical market that I worked on over a year ago and they&#39;ve just published the article replete with quotes from me!  How weird.  Check it out <A HREF="http://www.isminfo.com/index.php?option=com_jambozine&layout=article&view=page&aid=6018&Itemid=56">here.</A>
+<BR>My quotes are in the blue box on the right side.
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-07-01T02:05:04-08:00</dc:date>
+</item>
+<item>
+<title>First iPhone App Available in the App Store!</title>
+<link>/archive-115.html</link>
+<guid>/archive-115.html</guid>
+<description><![CDATA[Well, our app finally made it through the approval process.  Not too bad, only 2 weeks.  I&#39;ve heard of worse stories.  <A HREF="http://www.threejacks.com/doodlegames/index.html">Here&#39;s the link</A> to our web site describing it.  We explicitly targeted it towards younger kids along the lines of "Here kid, play with my iPhone while I finish eating dinner."
+<BR>We&#39;re trying to get people to take a look at it and get some positive reviews for it.  <fingers crossed>
+<BR>Anyway, I&#39;ll hopefully continue to post info about how it goes having an app up on the store.
+<BR>
+<BR>Cheers!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-06-26T15:03:45-08:00</dc:date>
+</item>
+<item>
+<title>First iPhone App Submitted to Apple</title>
+<link>/archive-114.html</link>
+<guid>/archive-114.html</guid>
+<description><![CDATA[We&#39;ve finally reached the milestone of submitting our application to the app store for approval.  Based on web reports and other iPhone developers that I know, it is somewhat arbitrary and random as to how long this waiting period will be.  It has certainly been fun for me to write code again as well as to learn a new language (Objective C.)
+<BR>As I mentioned in my last entry, if you are interested in being an Beta tester, please shoot me an email. <A HREF="mailto:jon@luggle.com">jon@luggle.com</A>
+<BR>
+<BR>Ciao!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-06-16T15:01:57-08:00</dc:date>
+</item>
+<item>
+<title>New iPhone Game Coming Soon</title>
+<link>/archive-113.html</link>
+<guid>/archive-113.html</guid>
+<description><![CDATA[Just a teaser for anyone who still reads this blog.  I&#39;ve been working on an iPhone game in my spare time with a couple friends and we&#39;re just about ready to launch it.  We&#39;re looking for some beta testers so if you are interested in participating in the beta, <A HREF="mailto:jon@luggle.com">drop me a note.</A>
+<BR>If you have children that you are willing to let play with your iPhone/iTouch, it may be helpful, but we think adults will enjoy the games too.
+<BR>More to come!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-06-13T19:39:59-08:00</dc:date>
+</item>
+<item>
+<title>Links Updated</title>
+<link>/archive-112.html</link>
+<guid>/archive-112.html</guid>
+<description><![CDATA[I&#39;ve spent the last few hours pruning and cleaning up my <A HREF="http://www.hazelware.com/links/">links</A>.  This is mostly for my own edification, but in case anyone is keeping track at home, they&#39;ve all been made relevant again.  At least to me...]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-04-15T02:44:02-08:00</dc:date>
+</item>
+<item>
+<title>Objective C is Weird</title>
+<link>/archive-111.html</link>
+<guid>/archive-111.html</guid>
+<description><![CDATA[My brain has been hurting lately going back and forth between Objective C (iPhone) and Java (Blackberry/RIM).  I&#39;m definitely still a n00b when it comes to ObjC, and the rules of when I have to use the command structure [object command] versus object.accessor still confuse me occasionally.  I&#39;ve also never seen a language where the @ symbol is used so much.  Maybe it&#39;s all the time I&#39;ve spent in C++ where the only place you see @ is in a decorator.  Oh, well.  I&#39;ll get it.  BTW, if you&#39;re starting out developing for the iPhone, I definitely recommend the iPhone Cookbook.  There used to be a free PDF version of it floating around on the web, but I think I saw that they removed it recently.  Just go slow and do the different examples that she has included, and if you&#39;re an experienced developer, you&#39;ll be off and running by the third chapter.
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-04-12T05:22:05-08:00</dc:date>
+</item>
+<item>
+<title>C++ and the iPhone</title>
+<link>/archive-110.html</link>
+<guid>/archive-110.html</guid>
+<description><![CDATA[So I have a bunch of utility classes/functions that I&#39;ve collected in my &#39;toolbox&#39; over the years.  When I first started doing iPhone development, I was a little bummed out because the primary development language for it is Objective C.  However, after poking around for a while, I&#39;ve realized that I actually can include .cpp files and/or .mm files (treated the same way by the compiler.)  I&#39;m still playing around with how much/little I can actually pull over, but at least I don&#39;t have to give up <i>everything</i>.  Cool!
+<BR>Also, I did a little poking around and for those of you curious, the compiler preprocessor directives that you can use to detect development for Mac/iPhone is __APPLE_CC__ and __GNUCC__.  In otherwords
+<BR>#if (defined(__APPLE_CC__) && defined(__GNUCC__))
+<BR>should evaluate to true if you are developing for an OSX/iPhone environment.  Need to dig a little more to detect the difference between Mac vs. iPhone.  I&#39;ll post a follow up once I figure it out.
+<BR>
+<BR>Cheers!
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-04-07T03:14:33-08:00</dc:date>
+</item>
+<item>
+<title>WH_KEYBOARD_LL Changed Values</title>
+<link>/archive-109.html</link>
+<guid>/archive-109.html</guid>
+<description><![CDATA[So, if you&#39;re trying to catch the hard button presses on WindowsMobile/PocketPC devices you have to create a hook function.  Go Google it if you want to see how.  However, be aware that the hook you want to register for (WH_KEYBOARD_LL) has a different value than it does on the desktop OS&#39;s.  If you aren&#39;t paying attention, you will find it to have a value of 13.  That is the desktop value.  If you want to do it on WinMo or PPC, you have to use 20.  Consider yourself warned...]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-03-28T04:04:00-08:00</dc:date>
+</item>
+<item>
+<title>Mobile IDE Setup Headaches</title>
+<link>/archive-108.html</link>
+<guid>/archive-108.html</guid>
+<description><![CDATA[Why does it have to be so hard to set up a machine to develop mobile applications?  It is such an arcane art, whether you&#39;re trying to grok Eclipse and RIM plugins and J2ME runtime libs or trying to get DevStudio 2008 with WindowsMobile SDKs set up.  It&#39;s just such a pain.  I have to admit that after setting up XCode+iPhone, Eclipse+Blackberry and DevStudio+WindowsMobile the iPhone was by far the easiest to get up and running.  How sad is that considering it&#39;s actually the newest of the three.  Crazy!]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-03-04T03:55:09-08:00</dc:date>
+</item>
+<item>
+<title>Hazelware Back From Wherever Web Sites Go To Die</title>
+<link>/archive-107.html</link>
+<guid>/archive-107.html</guid>
+<description><![CDATA[When I moved to Austin I gave the old server box that used to host Hazelware to a friend, in the hopes that he could just host it at his house.  Unfortunately, he has Verizon FIOS and they are draconian in their use of port 80.  For a while, a <A HREF="https://luggle.com">weak version of the whole Luggle site</A> was available via port 443, but anything and everything related to Hazelware was broken.  Now that things have settled, I purchased a "Slice" from <A HREF="http://www.slicehost.com">Slicehost</A> (highly recommend them!) and have the site, (blog and all) working again.  I also have started a few new mobile pursuits including iPhone and Blackberry programming in the past year.  I have a couple crappy sample apps that I will try and post next week, and with any luck I will have some thoughts(ramblings) regarding developing for these platforms.  As always, if anyone still reads this, <A HREF="mailto:jon@luggle.com">drop me a note.</A>
+<BR>
+<BR>-Jon]]></description>
+<dc:creator>"bosshogg"</dc:creator>
+<dc:date>2009-01-28T02:34:51-08:00</dc:date>
+</item>
+</channel>
+</rss>
